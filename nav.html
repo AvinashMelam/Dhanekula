@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Navbar (No JS)</title>
+  <style>
+
+.menu {
+  display: flex;
+  background-color: black;
+}
+.menu a {
+  text-decoration: none;
+  padding: 8px 10px;
+  color: white;
+}
+.menu a:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: all 2s;
+}
+
+@media screen and (max-width:600px){
+.menu {
+        flex-direction: column;  /* stack vertically */
+        overflow: hidden;
+    }
+      .menu a {
+        text-align: left;
+        padding: 12px;
+        flex-shrink: 0;
+      }
+    
+}
+
+.icon{
+    color: white;
+}
+</style>
+</head>
+<body>
+<nav class="topnav">
+
+  <!-- menu links wrapped for easier control -->
+  <div class="menu">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <span class="icon">&#9776;</span> <!-- Hamburger icon -->
+
+</div>
+</nav>
+
+
+
+<div style="padding-left:16px">
+  <h2>Responsive Navbar Without JS</h2>
+  <p>Resize the browser window to see the hamburger menu in action.</p>
+</div>
+
+</body>
+</html>

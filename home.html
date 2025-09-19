@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .child1{
+            background-color: red;
+            width: 45%;
+            height: 100px;
+        }
+        @media screen and (max-width: 700px) {
+        .child2{
+            width: 55%;
+            background-color: blue;
+            height: 100px;
+        }            
+        }
+/* Mobile Devices (320px - 480px) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* iPads and Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* Laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: lightyellow;
+  }
+}
+
+/* Large Screens and Desktops (1025px - 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    background-color: lightpink;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child1">
+
+        </div>
+        <div class="child2">
+
+        </div>
+    </div>
+</body>
+</html>

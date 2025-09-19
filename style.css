@@ -1,0 +1,18 @@
+ .world{
+            color: blue;
+            background-color: red;
+            width: 300px;
+            margin: 100px auto;
+        }
+
+.usa{
+    color: red;
+}
+
+#id1{
+    font-family: monospace;
+}
+
+#id2{
+    border: 2px blue solid;
+}
